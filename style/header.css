@@ -1,32 +1,78 @@
 header {
   background-color: #fff159;
-  & .header-content {
+
+  & .header-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: var(--py-md);
+    padding-block: var(--py-md);
 
     & .logo {
       width: 200px;
+      padding-inline: var(--px-xl);
     }
 
     & .input-wrapper {
       display: flex;
+      width: 100%;
       flex: 1;
+      background-color: #ffffff;
+      border-radius: 8px;
+
+      & input {
+        width: 100%;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      & img {
+        width: 35px;
+        padding: 5px;
+      }
     }
 
     & nav {
-      flex: 2;
+      flex: 1;
 
       & ul {
         list-style: none;
         display: flex;
-        justify-content: space-between;
-        padding-inline: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; /* Espaçamento entre eles */
+        padding-inline: var(--px-xl);
+        margin: 0;
       }
     }
-  }
-}
 
-img {
-  width: 100%;
-  display: inline-block;
+    & .carrinho {
+      width: 40px;
+    }
+  }
+  & .header-bottom {
+    width: 100%;
+    border-top: 2px solid #e0d348;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+
+    & .img-wrapper {
+      background-color: #ffff;
+      width: 100px;
+      height: 100px; /* adicione se quiser que o círculo tenha altura igual à largura */
+      border: 3px solid #ebdb2c;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
 }

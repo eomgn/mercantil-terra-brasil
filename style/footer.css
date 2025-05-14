@@ -1,0 +1,134 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    footer {
+      background-color: #FFD700;
+      color: #000;
+      padding: 40px 20px;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1 1 220px;
+      margin: 10px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+      color: #D00000;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #D00000;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #D00000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      color: #D00000;
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .promo-banner {
+      background-color: #D00000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 20px 0;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #D00000;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 22px;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .app-buttons img {
+      width: 120px;
+      margin: 5px 0;
+    }
+
+    @media(max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .back-to-top, .whatsapp-button {
+        bottom: 20px;
+      }
+    }
