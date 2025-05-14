@@ -1,27 +1,55 @@
 header {
   background-color: #fff159;
+  border-bottom: 2px solid #e0d348;
+
   & .header-content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: var(--py-md);
+    padding-block: var(--py-md);
 
     & .logo {
       width: 200px;
+      padding-inline: var(--px-xl);
     }
 
     & .input-wrapper {
       display: flex;
+      width: 100%;
       flex: 1;
+      background-color: #ffffff;
+      border-radius: 8px;
+
+      & input {
+        width: 100%;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      & img {
+        width: 35px;
+        padding: 5px;
+      }
     }
 
     & nav {
-      flex: 2;
+      flex: 1;
 
       & ul {
         list-style: none;
         display: flex;
-        justify-content: space-between;
-        padding-inline: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; /* Espaçamento entre eles */
+        padding-inline: var(--px-xl);
+        margin: 0;
       }
+    }
+
+    & .carrinho {
+      width: 40px;
     }
   }
 }

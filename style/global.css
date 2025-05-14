@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --px-md: 20px;
+  --py-md: 20px;
+}
+
 .header-content {
   /* padding: 20px; */
   --max-width: 1280px;
-  width: min(var(--max-width), 100% - 20px * 2);
+  width: min(var(--max-width), 100% - var(--px-md) * 2);
   margin-inline: auto;
 }
