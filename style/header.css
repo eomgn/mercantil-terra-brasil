@@ -1,6 +1,8 @@
 header {
+  background-color: #fff159;
   & .header-content {
     display: flex;
+    justify-content: space-between;
 
     & .logo {
       width: 200px;
@@ -8,12 +10,17 @@ header {
 
     & .input-wrapper {
       display: flex;
+      flex: 1;
     }
 
     & nav {
+      flex: 2;
+
       & ul {
         list-style: none;
         display: flex;
+        justify-content: space-between;
+        padding-inline: 20px;
       }
     }
   }
