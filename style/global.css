@@ -20,6 +20,97 @@
 
 
 
+/* começo do menu secundario */
+.img-dp{
+width: 2%;
+padding: 0;
+
+}
+.filter-categories {
+        font-family: Arial, sans-serif;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+    }
+    
+.filter-categories option {
+        padding: 5px 10px;
+    }
+
+.menu-departamentos {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.titulo-departamento {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-right: 30px;
+}
+
+.lista-departamentos {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 510px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.departamento {
+    padding: 8px 15px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #252424;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.departamento:hover {
+    background-color: #f5f5f5;
+    color: #202020;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .titulo-departamentos {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .lista-departamentos {
+        width: 100%;
+    }
+    
+    .departamento {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+/* fim do menu secundario */
+
+
+
 
 
 /* começo do estilo carrossel banner */
@@ -48,12 +139,12 @@
 
 .carrossel-track {
     display: flex;
-    width: 200%; /* 2 banners = 200% */
+    width: 200%; 
     transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-    width: 50%; /* 100% / 2 banners */
+    width: 50%; 
 }
 
 .banner {
@@ -62,12 +153,12 @@
     display: block;
 }
 
-/* Esconde os inputs radio */
+
 input[type="radio"] {
     display: none;
 }
 
-/* Controles de navegação */
+
 .controles {
     position: absolute;
     top: 50%;
@@ -92,7 +183,7 @@ input[type="radio"] {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Bullets de navegação */
+
 .bullets {
     position: absolute;
     bottom: 20px;
@@ -116,7 +207,7 @@ input[type="radio"] {
     background-color: white;
 }
 
-/* Lógica para troca de slides */
+
 #slide-1:checked ~ .carrossel-track {
     transform: translateX(0);
 }
@@ -130,3 +221,122 @@ input[type="radio"] {
     background-color: white;
 }
  /* fim do estilo carrossel banner */
+
+
+
+
+  /* começo do css dos produtos */
+ .produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card de produto */
+.produto-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.produto-info {
+    flex-grow: 1;
+}
+
+.produto-nome {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Preços e descontos */
+.preco-container {
+    margin: 15px 0;
+}
+
+.preco-original {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.preco-promocional {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.preco-por-kg {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.promo-texto {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.desconto-badge {
+    background-color: #e74c3c;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Botão de compra */
+.btn-comprar {
+    background-color: rgb(230, 9, 9);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+    .produtos-container {
+        grid-template-columns: 1fr;
+    }
+}
+ /* fim do css dos produtos */
+
+
+ 
+    
+ 
