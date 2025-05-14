@@ -9,7 +9,7 @@
   --py-md: 20px;
 }
 
-.header-content {
+.header-container {
   /* padding: 20px; */
   --max-width: 1280px;
   width: min(var(--max-width), 100% - var(--px-md) * 2);

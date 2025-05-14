@@ -2,7 +2,7 @@ header {
   background-color: #fff159;
   border-bottom: 2px solid #e0d348;
 
-  & .header-content {
+  & .header-container {
     display: flex;
     align-items: center;
     gap: var(--py-md);
