@@ -15,3 +15,118 @@
   width: min(var(--max-width), 100% - var(--px-md) * 2);
   margin-inline: auto;
 }
+
+
+
+
+
+
+
+/* começo do estilo carrossel banner */
+.carrossel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    width: 65%;
+}
+
+
+.subtitulo {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carrossel-track {
+    display: flex;
+    width: 200%; /* 2 banners = 200% */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 50%; /* 100% / 2 banners */
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Esconde os inputs radio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Controles de navegação */
+.controles {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.seta {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 50%;
+    user-select: none;
+    margin: 0 15px;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Bullets de navegação */
+.bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bullet {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+}
+
+.bullet:hover {
+    background-color: white;
+}
+
+/* Lógica para troca de slides */
+#slide-1:checked ~ .carrossel-track {
+    transform: translateX(0);
+}
+
+#slide-2:checked ~ .carrossel-track {
+    transform: translateX(-50%);
+}
+
+#slide-1:checked ~ .bullets .bullet:nth-child(1),
+#slide-2:checked ~ .bullets .bullet:nth-child(2) {
+    background-color: white;
+}
+ /* fim do estilo carrossel banner */
