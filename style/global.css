@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  /* padding: 20px; */
+  --max-width: 1280px;
+  width: min(var(--max-width), 100% - 20px * 2);
+  margin-inline: auto;
+}
