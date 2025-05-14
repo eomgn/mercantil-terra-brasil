@@ -1,0 +1,25 @@
+header {
+  & .header-content {
+    display: flex;
+
+    & .logo {
+      width: 200px;
+    }
+
+    & .input-wrapper {
+      display: flex;
+    }
+
+    & nav {
+      & ul {
+        list-style: none;
+        display: flex;
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
