@@ -1,5 +1,6 @@
 @import url(./global.css);
 @import url(./header.css);
+@import url(./section-produtos.css);
 
 .ofertas-container {
   background-color: #fff;
