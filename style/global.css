@@ -336,17 +336,23 @@ input[type="radio"] {
 
 
  .banner3 {
-  display: flex;
   padding-left: 331px;
  }
  .banner8 {
-  display: flex;
   padding-left: 350px;
   padding-right: 350px;
  }
 
- .link {
+ .botao-voltar-pagina-inicio{
+    margin-left: 12%;
+    margin-top:10px;
+    margin-bottom: 40px;
+ }
+ .link-botao-voltar-inicio{
     text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
  }
 
  
