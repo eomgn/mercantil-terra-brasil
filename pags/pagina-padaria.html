@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercantil - Terra Brasil :D</title>
+    <title>Mercantil - Compre Bem</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="/style/index.css" />
-
+    <link rel="stylesheet" href="../style/index.css" />
     <!-- Java Script-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -37,10 +36,12 @@
     <header>
       <div class="header-container">
         <div class="logo">
-          <img
-            src="/imagens/CompreBem-superm.png"
+          
+            <a href="../index.html">
+          <img 
+            src="../imagens/CompreBem-superm.png"
             alt="logo"
-          />
+          /></a>
         </div>
 
         <div class="input-wrapper">
@@ -101,7 +102,7 @@
        <!-- começo do menu secundario -->
      <nav class="menu-departamentos">
          <div class="container">
-           <img src="/imagens/img-dp.PNG" alt="" class="img-dp">
+           <img src="../imagens/img-dp.PNG" alt="" class="img-dp">
              <select class="filter-categories border-0 mb-0 me-5" class="filter-categories2" id="filtro-select-categoria">
                <option>Comprar por departamento</option>
                <option value="/pags/pagina-mercearia.html">Mercearia</option>
@@ -109,10 +110,10 @@
                <option value="/pags/pagina-padaria.html">Padaria</option>
              </select>
              <ul class="lista-departamentos">
-                 <li class="departamento">Padaria</li>
-                 <li class="departamento">Frios e Laticínios</li>
-                 <li class="departamento">Higiene</li>
-                 <li class="departamento">Hortifruti</li>
+                 <a href="../pags/pagina-mercearia.html" class="link3"><li class="departamento">Mercearia</li></a>
+                 <a href="../pags/pagina-carne-aves.html" class="link3"><li class="departamento">Açougue</li></a>
+                 <a href="../pags/pagina-padaria.html" class="link3"><li class="departamento">Padaria</li></a>
+                 <a href="../index.html" class="link3"><li class="departamento">Inicio</li></a>
              </ul>
          </div>
      </nav>
@@ -120,49 +121,21 @@
      
      
      
-     <br><br>
-       <!-- começo do carrossel banner -->
-       <div class="carrossel-container">
-     <div class="carrossel">
-         <input type="radio" name="slides" id="slide-1" checked>
-         <input type="radio" name="slides" id="slide-2">
      
-         <div class="carrossel-track">
-             <div class="contbanner1 slide" id="banner-1">
-                 <img src="/imagens/banner1.PNG" alt="banner" class="banner">
-             </div>
-             <div class="contbanner2 slide" id="banner-2">
-                 <img src="/imagens/banner2.PNG" alt="banner2" class="banner">
-             </div>
-         </div>
-     
-         <div class="controles">
-             <label for="slide-1" class="seta esquerda">&#10094;</label>
-             <label for="slide-2" class="seta direita">&#10095;</label>
-         </div>
-     
-         <div class="bullets">
-             <label for="slide-1" class="bullet"></label>
-             <label for="slide-2" class="bullet"></label>
-         </div>
-     </div>
-     </div>
-     </div>
-      <!-- fim do carrossel banner -->
+     <br>
+      
      
      <br><br>
 <section class="ofertas-container">
          <h2 class="ofertas-titulo">Ofertas do Dia em Padaria!🎉</h2>
 </section>
 
-  <div class="botao-voltar-pagina-inicio">
-    <a href="/index.html" class="link-botao-voltar-inicio">inicio      ></a>
-  </div>
+
 <section>
       <div class="produtos-container">
          <!-- Produto 1 - Arroz -->
          <div class="produto-card">
-            <img src="/imagens/leite-em-po.webp" alt="leite em pó">
+            <img src="../imagens/leite-em-po.webp" alt="leite em pó">
              <div class="produto-info">
                  <h3 class="produto-nome">Leite em Pó Ninho Integral Lata com 380g</h3>
                  <p class="produto-descricao">Leite em Pó Ninho Integral Lata com 380g, é uma opção prática e econômica para diversos usos.</p>
@@ -181,7 +154,7 @@
      
          <!-- Produto 2 - Cerveja -->
          <div class="produto-card">
-           <img src="/imagens/pao-de-forma.webp" alt="pao-de-forma">
+           <img src="../imagens/pao-de-forma.webp" alt="pao-de-forma">
              <div class="produto-info">
                  <h3 class="produto-nome">Pão de Forma Pullman Tradicional Pacote com 480g</h3>
                  <p class="produto-descricao">Pão de Forma Pullman Tradicional Pacote com 480g, é uma opção prática e econômica para diversos usos.</p>
@@ -199,7 +172,7 @@
      
          <!-- Produto 3 - Bacon -->
          <div class="produto-card">
-           <img src="/imagens/leite-fermentado-activia.webp" alt="leite-fermemtado">
+           <img src="../imagens/leite-fermentado-activia.webp" alt="leite-fermemtado">
              <div class="produto-info">
                  <h3 class="produto-nome">Leite Fermentado Activia Ameixa Unidade com 170g</h3>
                  <p class="produto-descricao">Leite Fermentado Activia Ameixa Unidade com 170g, é uma opção versátil para diversos usos</p>
@@ -216,7 +189,7 @@
          </div>
          <!-- Produto 3 - Pão -->
          <div class="produto-card">
-           <img src="/imagens/bisnaguinha-boys.webp" alt="café melitta">
+           <img src="../imagens/bisnaguinha-boys.webp" alt="café melitta">
              <div class="produto-info">
                  <h3 class="produto-nome">Bisnaguinha Seven Boys Original Pacote com 300g</h3>
                  <p class="produto-descricao">A Bisnaguinha Seven Boys Original, em pacote de 300g, é uma opção prática e versátil para diversos usos. </p>
@@ -234,7 +207,7 @@
      
        <!-- Produto 4 - leite -->
          <div class="produto-card">
-           <img src="/imagens/aveia-nestle.webp" alt="leite condensado betania">
+           <img src="../imagens/aveia-nestle.webp" alt="leite condensado betania">
              <div class="produto-info">
                  <h3 class="produto-nome">Aveia Nestlé Flocos Finos Caixeta com 170g</h3>
                  <p class="produto-descricao">Aveia Nestlé Flocos Finos Caixeta com 170g é uma opção pratica e econômica para diversos usos.</p>
@@ -251,7 +224,7 @@
          </div>
          <!-- Produto 5 - achocolatado -->
          <div class="produto-card">
-           <img src="/imagens/nescau-sucrilhos.webp" alt="achocolatado maratá">
+           <img src="../imagens/nescau-sucrilhos.webp" alt="achocolatado maratá">
              <div class="produto-info">
                  <h3 class="produto-nome">Cereal Matinal Nestlé Nescau Caixeta com 770g</h3>
                  <p class="produto-descricao">Cereal Matinal Nestlé Nescau Caixeta com 770g é uma opção prática e econômica para diversos usos. </p>
@@ -268,7 +241,7 @@
          </div>
         <!-- Produto 6 - açucar -->
          <div class="produto-card">
-           <img src="/imagens/aveia-emflocos-finos-yoki.webp" alt="açúcar bella">
+           <img src="../imagens/aveia-emflocos-finos-yoki.webp" alt="açúcar bella">
              <div class="produto-info">
                  <h3 class="produto-nome">Aveia Yoki Flocos Finos Caixeta com 170g</h3>
                  <p class="produto-descricao">Aveia Yoki Flocos Finos Caixeta com 170g, é uma opção pratica e econômica para diversos usos.</p>
@@ -285,7 +258,7 @@
          </div>
        <!-- Produto  - file -->
          <div class="produto-card">
-           <img src="/imagens/torrada-visconti.webp" alt="arroz camil">
+           <img src="../imagens/torrada-visconti.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Torrada Visconti Tradicional Pacote com 120g</h3>
                  <p class="produto-descricao">Torrada Visconti Tradicional Pacote com 120g, é uma opção prática e conveniente para diversos usos.</p>
@@ -306,7 +279,7 @@
       <div class="produtos-container">
          <!-- Produto 1 - Arroz -->
          <div class="produto-card">
-            <img src="/imagens/pao-de-forno-wickbold.webp" alt="farinha de trigo dona benta">
+            <img src="../imagens/pao-de-forno-wickbold.webp" alt="farinha de trigo dona benta">
              <div class="produto-info">
                  <h3 class="produto-nome">Pão do Forno Wickbold Integral Pacote com 500g</h3>
                  <p class="produto-descricao">Pão do Forno Wickbold Integral Pacote com 500g, é uma opção prática e versátil para diversos usos.</p>
@@ -325,7 +298,7 @@
      
          <!-- Produto 2 - Cerveja -->
          <div class="produto-card">
-           <img src="/imagens/pullman-rap-10.webp" alt="Vinagre Vitalia 750ml">
+           <img src="../imagens/pullman-rap-10.webp" alt="Vinagre Vitalia 750ml">
              <div class="produto-info">
                  <h3 class="produto-nome">Pullman Rap 10 Original Pacote com 297g</h3>
                  <p class="produto-descricao">Pullman Rap 10 Original Pacote com 297g, é uma opção prática e econômica para diversos usos.</p>
@@ -343,7 +316,7 @@
      
          <!-- Produto 3 - Bacon -->
          <div class="produto-card">
-           <img src="/imagens/pao-de-milho-caseiro.webp" alt="arroz camil">
+           <img src="../imagens/pao-de-milho-caseiro.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Pão Caseiro Panco Milho Pacote com 500g</h3>
                  <p class="produto-descricao"> Pão Caseiro Panco Milho Pacote com 500g, é uma opção versátil para diversas aplicações culinárias.</p>
@@ -360,7 +333,7 @@
          </div>
          <!-- Produto 3 - Pão -->
          <div class="produto-card">
-           <img src="/imagens/pao-para-hotdog.webp" alt="Molho de tomate fugini">
+           <img src="../imagens/pao-para-hotdog.webp" alt="Molho de tomate fugini">
              <div class="produto-info">
                  <h3 class="produto-nome">Pão para Hot Dog Kim Pacote com 500g</h3>
                  <p class="produto-descricao">Pão para Hot Dog Kim Pacote com 500g, oferece praticidade e conveniência para diversos usos.</p>
@@ -378,7 +351,7 @@
      
        <!-- Produto 4 - leite -->
          <div class="produto-card">
-           <img src="/imagens/bolinho-ana-maria.webp" alt="leite condensado betania">
+           <img src="../imagens/bolinho-ana-maria.webp" alt="leite condensado betania">
              <div class="produto-info">
                  <h3 class="produto-nome">Bolo Ana Maria Gotas de chocolate Unidade com 70g</h3>
                  <p class="produto-descricao">Bolo Ana Maria Gotas de chocolate Unidade com 70g, é uma opção prática e eficiente para usos rápidos.</p>
@@ -395,7 +368,7 @@
          </div>
          <!-- Produto 5 - achocolatado -->
          <div class="produto-card">
-           <img src="/imagens/pao-para-hamburguer.webp" alt="achocolatado maratá">
+           <img src="../imagens/pao-para-hamburguer.webp" alt="achocolatado maratá">
              <div class="produto-info">
                  <h3 class="produto-nome">Pão para Hambúrguer Kim Pacote com 200g</h3>
                  <p class="produto-descricao">Pão para Hambúrguer Kim Pacote com 200g é uma opção prática e econômica para usos rápidos. </p>
@@ -412,7 +385,7 @@
          </div>
         <!-- Produto 6 - açucar -->
          <div class="produto-card">
-           <img src="/imagens/geleia.webp" alt="macarrao com ovos benta">
+           <img src="../imagens/geleia.webp" alt="macarrao com ovos benta">
              <div class="produto-info">
                  <h3 class="produto-nome">Geleia Queensberry Frutas Vermelhas Vidro com 320g</h3>
                  <p class="produto-descricao">Geleia Queensberry Frutas Vermelhas Vidro com 320g, é uma opção pratica e econômica para diversos usos.</p>
@@ -429,7 +402,7 @@
          </div>
        <!-- Produto  - file -->
          <div class="produto-card">
-           <img src="/imagens/leite-em-po-zero-lactose.webp" alt="Milho Verde Bonare Lata com 170g">
+           <img src="../imagens/leite-em-po-zero-lactose.webp" alt="Milho Verde Bonare Lata com 170g">
              <div class="produto-info">
                  <h3 class="produto-nome">Leite em Pó Itambé Zero lactose Pacote com 300g</h3>
                  <p class="produto-descricao">Milho Verde Bonare Lata com 170g, é uma opção prática e conveniente para diversos usos.</p>
@@ -454,7 +427,7 @@
 
  <section>
   <div>
-    <img src="/imagens/banner8.webp" alt="banner8" class="banner8" width="1900px">
+    <img src="../imagens/banner8.webp" alt="banner8" class="banner8" width="1900px">
   </div>
  </section>
 
@@ -463,6 +436,12 @@
    </main>  
    <footer>
   <div class="footer-container">
+    <ul id="redes">
+    <li type="none" class="r1"><img src="../imagens/facebook.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/insta.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/tw.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/linkedin.png" alt=""></li>
+    </ul>
 
     <div class="footer-column">
       <h4>Institucional</h4>
@@ -483,7 +462,7 @@
         <li><a href="#">Política de Trocas</a></li>
       </ul>
     </div>
-
+ 
     <div class="footer-column">
       <h4>Receba nossas ofertas</h4>
       <div class="newsletter">
@@ -517,7 +496,7 @@
   </div>
 
   <div style="text-align:center; margin-top: 20px;">
-    <small>&copy; 2025 Mercantil Terra Brasil. Todos os direitos reservados. Política de Privacidade | Termos de Uso</small>
+    <small>&copy; 2025 Mercantil Compre Bem. Todos os direitos reservados. Política de Privacidade | Termos de Uso</small>
   </div>
   </footer>
 
@@ -528,6 +507,7 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <a href="#topo" class="voltar-topo" title="Voltar ao topo">Voltar ao topo ↑</a
+    <a href="#topo" class="voltar-topo" title="Voltar ao topo">Voltar ao topo ↑</a>
+
   </body>
 </html>
