@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercantil - Terra Brasil :D</title>
+    <title>Mercantil - Compre Bem</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="/style/index.css" />
-
+    <link rel="stylesheet" href="../style/index.css" />
     <!-- Java Script-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -37,10 +36,12 @@
     <header>
       <div class="header-container">
         <div class="logo">
-          <img
-            src="/imagens/CompreBem-superm.png"
+          
+            <a href="../index.html">
+          <img 
+            src="../imagens/CompreBem-superm.png"
             alt="logo"
-          />
+          /></a>
         </div>
 
         <div class="input-wrapper">
@@ -101,7 +102,7 @@
        <!-- começo do menu secundario -->
      <nav class="menu-departamentos">
          <div class="container">
-           <img src="/imagens/img-dp.PNG" alt="" class="img-dp">
+           <img src="../imagens/img-dp.PNG" alt="" class="img-dp">
              <select class="filter-categories border-0 mb-0 me-5" class="filter-categories2" id="filtro-select-categoria">
                <option>Comprar por departamento</option>
                <option value="/pags/pagina-mercearia.html">Mercearia</option>
@@ -109,10 +110,10 @@
                <option value="/pags/pagina-padaria.html">Padaria</option>
              </select>
              <ul class="lista-departamentos">
-                 <li class="departamento">Padaria</li>
-                 <li class="departamento">Frios e Laticínios</li>
-                 <li class="departamento">Higiene</li>
-                 <li class="departamento">Hortifruti</li>
+                 <a href="../pags/pagina-mercearia.html" class="link3"><li class="departamento">Mercearia</li></a>
+                 <a href="../pags/pagina-carne-aves.html" class="link3"><li class="departamento">Açougue</li></a>
+                 <a href="../pags/pagina-padaria.html" class="link3"><li class="departamento">Padaria</li></a>
+                 <a href="../index.html" class="link3"><li class="departamento">Inicio</li></a>
              </ul>
          </div>
      </nav>
@@ -120,48 +121,18 @@
      
      
      
-     <br><br>
-       <!-- começo do carrossel banner -->
-       <div class="carrossel-container">
-     <div class="carrossel">
-         <input type="radio" name="slides" id="slide-1" checked>
-         <input type="radio" name="slides" id="slide-2">
-     
-         <div class="carrossel-track">
-             <div class="contbanner1 slide" id="banner-1">
-                 <img src="/imagens/banner1.PNG" alt="banner" class="banner">
-             </div>
-             <div class="contbanner2 slide" id="banner-2">
-                 <img src="/imagens/banner2.PNG" alt="banner2" class="banner">
-             </div>
-         </div>
-     
-         <div class="controles">
-             <label for="slide-1" class="seta esquerda">&#10094;</label>
-             <label for="slide-2" class="seta direita">&#10095;</label>
-         </div>
-     
-         <div class="bullets">
-             <label for="slide-1" class="bullet"></label>
-             <label for="slide-2" class="bullet"></label>
-         </div>
-     </div>
-     </div>
-     </div>
-      <!-- fim do carrossel banner -->
+  
      
      <br><br>
 <section class="ofertas-container">
          <h2 class="ofertas-titulo">Ofertas do Dia em Carne e Aves!🎉</h2>
 </section>
-<div class="botao-voltar-pagina-inicio">
-    <a href="/index.html" class="link-botao-voltar-inicio">inicio      ></a>
-  </div>
+
 <section>
       <div class="produtos-container">
          <!-- Produto 1 - Arroz -->
          <div class="produto-card">
-            <img src="/imagens/carne-bovina-moida.webp" alt="arroz camil">
+            <img src="../imagens/carne-bovina-moida.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Carne Bovina Moída Friboi Congelada Pacote com 500g</h3>
                  <p class="produto-descricao">Carne Bovina Moída Friboi Congelada Pacote com 500g, é uma opção prática e econômica para diversos usos.</p>
@@ -179,7 +150,7 @@
      
          <!-- Produto 2 - Cerveja -->
          <div class="produto-card">
-           <img src="/imagens/peito-de-frango.webp" alt="oleo de soja 900ml">
+           <img src="../imagens/peito-de-frango.webp" alt="oleo de soja 900ml">
              <div class="produto-info">
                  <h3 class="produto-nome">Peito de Frango Sem Osso Congelado Pacote KG</h3>
                  <p class="produto-descricao">Peito de Frango Sem Osso Congelado Pacote KG, é uma opção prática e econômica para diversos usos.</p>
@@ -197,7 +168,7 @@
      
          <!-- Produto 3 - Bacon -->
          <div class="produto-card">
-           <img src="/imagens/pernil-suino-com-osso-resfriado-kg.webp" alt="arroz camil">
+           <img src="../imagens/pernil-suino-com-osso-resfriado-kg.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Pernil Suíno Resfriado Com Osso KG</h3>
                  <p class="produto-descricao">Pernil Suíno Resfriado Com Osso KG é uma opção versátil para diversos usos culinarios</p>
@@ -214,7 +185,7 @@
          </div>
          <!-- Produto 3 - Pão -->
          <div class="produto-card">
-           <img src="/imagens/coxa-e-sobrecoxa-de-frango-resfriada-kg.webp" alt="coxa">
+           <img src="../imagens/coxa-e-sobrecoxa-de-frango-resfriada-kg.webp" alt="coxa">
              <div class="produto-info">
                  <h3 class="produto-nome">Coxa Com Sobrecoxa de Frango Resfriada KG</h3>
                  <p class="produto-descricao">Coxa Com Sobrecoxa de Frango Resfriada KG é uma opção versátil para diversos usos. </p>
@@ -232,7 +203,7 @@
      
        <!-- Produto 4 - leite -->
          <div class="produto-card">
-           <img src="/imagens/acem-bovino-resfriado-kg.webp" alt="leite condensado betania">
+           <img src="../imagens/acem-bovino-resfriado-kg.webp" alt="leite condensado betania">
              <div class="produto-info">
                  <h3 class="produto-nome">Acém Bovino Resfriado KG</h3>
                  <p class="produto-descricao">Acém Bovino Resfriado KG uma opção pratica e econômica para diversos usos culinarios.</p>
@@ -249,7 +220,7 @@
          </div>
          <!-- Produto 5 - achocolatado -->
          <div class="produto-card">
-           <img src="/imagens/contrafile-peca-inteira-a-vacuo-3kg.webp" alt="achocolatado maratá">
+           <img src="../imagens/contrafile-peca-inteira-a-vacuo-3kg.webp" alt="achocolatado maratá">
              <div class="produto-info">
                  <h3 class="produto-nome">Contrafilé Peça Inteira A Vácuo Kg</h3>
                  <p class="produto-descricao">Contrafilé Peça Inteira A Vácuo KG é uma opção prática e econômica para diversos usos culinarios. </p>
@@ -266,7 +237,7 @@
          </div>
         <!-- Produto 6 - açucar -->
          <div class="produto-card">
-           <img src="/imagens/patinho-bovino-resfriado-kg.webp" alt="açúcar bella">
+           <img src="../imagens/patinho-bovino-resfriado-kg.webp" alt="açúcar bella">
              <div class="produto-info">
                  <h3 class="produto-nome">Patinho Bovino Resfriado KG</h3>
                  <p class="produto-descricao">Patinho Bovino Resfriado KG é uma opção pratica e econômica para diversos usos culinarios.</p>
@@ -283,7 +254,7 @@
          </div>
        <!-- Produto  - file -->
          <div class="produto-card">
-           <img src="/imagens/bisteca-suina-resfriada-kg.webp" alt="arroz camil">
+           <img src="../imagens/bisteca-suina-resfriada-kg.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Bisteca Suína Congelada KG</h3>
                  <p class="produto-descricao">Bisteca Suína Congelada KG, é uma opção prática e conveniente para diversos usos culinarios.</p>
@@ -304,7 +275,7 @@
       <div class="produtos-container">
          <!-- Produto 1 - Arroz -->
          <div class="produto-card">
-            <img src="/imagens/frango-inteiro-resfriado-3500kg.jpg" alt="farinha de trigo dona benta">
+            <img src="../imagens/frango-inteiro-resfriado-3500kg.jpg" alt="farinha de trigo dona benta">
              <div class="produto-info">
                  <h3 class="produto-nome">Frango Inteiro Resfriado KG</h3>
                  <p class="produto-descricao">Frango Inteiro Resfriado KG, é uma opção prática e versátil para diversos usos culinarios.</p>
@@ -323,7 +294,7 @@
      
          <!-- Produto 2 - Cerveja -->
          <div class="produto-card">
-           <img src="/imagens/toucinho-suino-resfriado-kg.webp" alt="Vinagre Vitalia 750ml">
+           <img src="../imagens/toucinho-suino-resfriado-kg.webp" alt="Vinagre Vitalia 750ml">
              <div class="produto-info">
                  <h3 class="produto-nome">Toucinho Suíno Resfriado 500g</h3>
                  <p class="produto-descricao">Toucinho Suíno Resfriado 500g, é uma opção prática e econômica para diversos usos.</p>
@@ -341,7 +312,7 @@
      
          <!-- Produto 3 - Bacon -->
          <div class="produto-card">
-           <img src="/imagens/picanha-bovina-leve-mais-fatiada-cry-resfriada-kg.webp" alt="arroz camil">
+           <img src="../imagens/picanha-bovina-leve-mais-fatiada-cry-resfriada-kg.webp" alt="arroz camil">
              <div class="produto-info">
                  <h3 class="produto-nome">Picanha Bovina Fatiada A Vácuo KG</h3>
                  <p class="produto-descricao"> Picanha Bovina Fatiada A Vácuo KG é uma opção versátil para diversas usos culinárias.</p>
@@ -358,7 +329,7 @@
          </div>
          <!-- Produto 3 - Pão -->
          <div class="produto-card">
-           <img src="/imagens/peixe-file-salmao-oceani-cpele-cong-kg.webp" alt="Molho de tomate fugini">
+           <img src="../imagens/peixe-file-salmao-oceani-cpele-cong-kg.webp" alt="Molho de tomate fugini">
              <div class="produto-info">
                  <h3 class="produto-nome">Filé de Salmão Oceani Com Pele Congelado 1,2kg</h3>
                  <p class="produto-descricao">Filé de Salmão Oceani Com Pele Congelado 1,2kg oferece praticidade e conveniência para diversos usos culinarios.</p>
@@ -376,7 +347,7 @@
      
        <!-- Produto 4 - leite -->
          <div class="produto-card">
-           <img src="/imagens/posta-de-cacao-congelado-800g.webp" alt="leite condensado betania">
+           <img src="../imagens/posta-de-cacao-congelado-800g.webp" alt="leite condensado betania">
              <div class="produto-info">
                  <h3 class="produto-nome">Posta de Cação Só Pesca Congelado 800g</h3>
                  <p class="produto-descricao">Posta de Cação Só Pesca Congelado 800g, é uma opção prática e eficiente para diversas aplicações culinaria.</p>
@@ -394,7 +365,7 @@
          </div>
          <!-- Produto 5 - achocolatado -->
          <div class="produto-card">
-           <img src="/imagens/file-de-merluza-so-pesca-congelada-800g.webp" alt="achocolatado maratá">
+           <img src="../imagens/file-de-merluza-so-pesca-congelada-800g.webp" alt="achocolatado maratá">
              <div class="produto-info">
                  <h3 class="produto-nome">Filé de Merluza Só Pesca Congelada 800g</h3>
                  <p class="produto-descricao">Filé de Merluza Só Pesca Congelada 800g é uma opção prática e econômica para usos culinaria. </p>
@@ -412,7 +383,7 @@
          </div>
         <!-- Produto 6 - açucar -->
          <div class="produto-card">
-           <img src="/imagens/Carvão Vegetal Três Barras 5kg.webp" alt="macarrao com ovos benta">
+           <img src="../imagens/Carvão Vegetal Três Barras 5kg.webp" alt="macarrao com ovos benta">
              <div class="produto-info">
                  <h3 class="produto-nome">Carvão Vegetal Três Barras 5kg</h3>
                  <p class="produto-descricao">Carvão Vegetal Três Barras 5kg é uma opção pratica e econômica para diversos usos.</p>
@@ -429,7 +400,7 @@
          </div>
        <!-- Produto  - file -->
          <div class="produto-card">
-           <img src="/imagens/carvao-vegetal-tres-barras-25kg.webp" alt="Milho Verde Bonare Lata com 170g">
+           <img src="../imagens/carvao-vegetal-tres-barras-25kg.webp" alt="Milho Verde Bonare Lata com 170g">
              <div class="produto-info">
                  <h3 class="produto-nome">Carvão Vegetal Três Barras 2,5kg</h3>
                  <p class="produto-descricao">Carvão Vegetal Três Barras 2,5kg, é uma opção prática e conveniente para diversos usos.</p>
@@ -455,7 +426,7 @@
 
  <section>
   <div>
-    <img src="/imagens/banner8.webp" alt="banner8" class="banner8" width="1900px">
+    <img src="../imagens/banner8.webp" alt="banner8" class="banner8" width="1900px">
   </div>
  </section>
 
@@ -464,6 +435,12 @@
    </main>  
    <footer>
   <div class="footer-container">
+    <ul id="redes">
+    <li type="none" class="r1"><img src="../imagens/facebook.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/insta.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/tw.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/linkedin.png" alt=""></li>
+    </ul>
 
     <div class="footer-column">
       <h4>Institucional</h4>
@@ -484,7 +461,7 @@
         <li><a href="#">Política de Trocas</a></li>
       </ul>
     </div>
-
+ 
     <div class="footer-column">
       <h4>Receba nossas ofertas</h4>
       <div class="newsletter">
@@ -518,7 +495,7 @@
   </div>
 
   <div style="text-align:center; margin-top: 20px;">
-    <small>&copy; 2025 Mercantil Terra Brasil. Todos os direitos reservados. Política de Privacidade | Termos de Uso</small>
+    <small>&copy; 2025 Mercantil Compre Bem. Todos os direitos reservados. Política de Privacidade | Termos de Uso</small>
   </div>
   </footer>
 
@@ -529,6 +506,8 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <a href="#topo" class="voltar-topo" title="Voltar ao topo">Voltar ao topo ↑</a
+    <a href="#topo" class="voltar-topo" title="Voltar ao topo">Voltar ao topo ↑</a>
+
   </body>
 </html>
+
