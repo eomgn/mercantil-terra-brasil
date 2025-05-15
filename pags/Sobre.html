@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercantil - Compre Bem</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style/index.css" />
+    <!-- Java Script-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const seletor = document.getElementById("filtro-select-categoria");
+
+        seletor.addEventListener("change", function () {
+          const url = this.value;
+          if (url !== "") {
+            window.location.href = url;
+          }
+        });
+      });
+
+
+    </script>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <a id="topo"></a>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="../index.html">
+          <img 
+            src="./imagens/CompreBem-superm.png"
+            alt="logo"
+          /></a>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" name="" id="" />
+          <img
+            src="https://images.vexels.com/media/users/3/195032/isolated/preview/5c8f453f712deaccf64d803b6578abd6-escola-de-icones-lisos-de-lupa.png"
+            alt="icone de pesquisar"
+          />
+        </div>
+
+        <nav>
+          <ul>
+            <li>Criar conta</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Trabalhe conosco</li>
+          </ul>
+        </nav>
+
+        <div class="carrinho">
+          <img
+            src="https://images.vexels.com/media/users/3/132114/isolated/lists/5367202ad4dd11725544cb3008049f96-icone-plano-de-carrinho-de-compras.png"
+            alt="icone de carrinho"
+          />
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="img-wrapper">
+          <img src="https://png.pngtree.com/png-clipart/20241011/original/pngtree-bread-png-image_16270070.png" alt="pão">
+        </div>
+
+        <div class="img-wrapper">
+          <img src="https://static.vecteezy.com/system/resources/previews/042/579/438/non_2x/ai-generated-maresca-festive-meat-cold-cuts-isolated-on-transparent-background-free-png.png" alt="frios">
+        </div>
+
+        <div class="img-wrapper">
+          <img src="https://www.higiclear.com/wp-content/uploads/2020/04/kit-de-limpeza-cesta-de-limpeza-azul-higiclear.png" alt="higiene">
+        </div>
+
+        <div class="img-wrapper">
+          <img src="https://phygital-files.mercafacil.com/catalogo/uploads/produto/biscoito_vilma_360g_cream_cracker_7c00aaca-61ca-4347-9cfa-32db68c75a36.png" alt="bolachas">
+        </div>
+
+        <div class="img-wrapper">
+          <img src="https://amaretti.com.br/wp-content/uploads/2021/08/BEBIDAS.png" alt="bolachas">
+        </div>
+        <div class="img-wrapper">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/050/431/850/small/fruits-strawberry-orange-grapefruit-apples-blueberries-pineapple-png.png" alt="bolachas">
+        </div>
+
+       
+      </div>
+    </header>
+      
+   <main>
+     
+       <!-- começo do menu secundario -->
+     <nav class="menu-departamentos">
+         <div class="container">
+           <img src="../imagens/img-dp.PNG" alt="" class="img-dp">
+             <select class="filter-categories border-0 mb-0 me-5" class="filter-categories2" id="filtro-select-categoria">
+               <option>Comprar por departamento</option>
+               <option value="/pags/pagina-mercearia.html">Mercearia</option>
+               <option value="/pags/pagina-carne-aves.html">Açougue</option>
+               <option value="/pags/pagina-padaria.html">Padaria</option>
+             </select>
+             <ul class="lista-departamentos">
+                 <a href="./pags/pagina-mercearia.html" class="link3"><li class="departamento">Mercearia</li></a>
+                 <a href="./pags/pagina-carne-aves.html" class="link3"><li class="departamento">Açougue</li></a>
+                 <a href="./pags/pagina-padaria.html" class="link3"><li class="departamento">Padaria</li></a>
+                 <a href="../index.html" class="link3"><li class="departamento">Inicio</li></a>
+             </ul>
+         </div>
+     </nav><br><br><br><br>
+     <!-- fim do menu secundario -->
+
+<div class="s1">
+<h1>
+Sobre o Mercantil</h1>
+
+<p>De um pequeno comércio familiar de itens de higiene pessoal criado em 2024, na tradicional Fortaleza, no Ceará, o Mercantil Compre Bem cresceu e se tornou um grande cash & carry local.
+
+A partir de 2025, ele passou a integrar o grupo FSN4 Brasil e expandiu sua atuação na capital cearense.
+
+Tendo como proposta de valor atuar com excelência, eficiência operacional, oferecer preços competitivos, sortimento e qualidade a consumidores finais, transformadores, pequenos e médios comerciantes, em 2025, a rede mudou sua marca para FSN4, fortalecendo seu posicionamento e atuação no mercado regional.
+
+Dispondo de lojas amplas e climatizadas, mix variado de alimentos e não-alimentos, com foco em perecíveis, oferece condições especiais de pagamento, serviço de televendas, caixas exclusivos para pessoa jurídica e self-checkouts.
+
+Nos últimos anos, o Mercantil Atacado realizou grandes avanços no digital com o lançamento do seu próprio aplicativo, que permite aos clientes ativarem ofertas exclusivas e personalizadas, e da sua plataforma e-commerce, onde eles podem realizar suas compras online com toda comodidade, com opção para entrega em domicílio ou retirada em lojas selecionadas.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+ </main>  
+   <footer>
+  <div class="footer-container">
+    <ul id="redes">
+    <li type="none" class="r1"><img src="../imagens/facebook.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/insta.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/tw.png" alt=""></li>
+    <li type="none" class="r1"><img src="../imagens/linkedin.png" alt=""></li>
+    </ul>
+
+    <div class="footer-column">
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Nossas Lojas</a></li>
+        <li><a href="#">Carreiras</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Atendimento</h4>
+      <ul>
+        <li>Seg-Sáb: 08h às 20h</li>
+        <li>Dom: 09h às 14h</li>
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Política de Trocas</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer-column">
+      <h4>Receba nossas ofertas</h4>
+      <div class="newsletter">
+        <input type="email" placeholder="Seu e-mail">
+        <button>Quero receber</button>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Aplicativo</h4>
+      <div class="app-buttons">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+      </div>
+      <h4>Encontre a loja</h4>
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.463768641501!2d-46.63616778436943!3d-23.58812346874621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c1efb9b4a7%3A0xb86ef4a00a08f437!2sMercado%20Exemplo!5e0!3m2!1spt-BR!2sbr!4v1619451368315!5m2!1spt-BR!2sbr"
+  width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+      </div>
+
+  </div>
+
+  <div class="promo-banner">
+    🎉 Oferta do dia: Leve 3, Pague 2 em toda a seção de biscoitos! 🎉
+  </div>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <small>&copy; 2025 Mercantil Compre Bem. Todos os direitos reservados. Política de Privacidade | Termos de Uso</small>
+  </div>
+  </footer>
+
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    
+
+  </body>
+</html>
