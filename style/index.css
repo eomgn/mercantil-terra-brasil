@@ -2,7 +2,7 @@
 @import url(./header.css);
 @import url(./banner);
 @import url(./section-produtos.css);
-
+@import url(./pages-prod.css);
 @import url(./footer.css);
 .ofertas-container {
   background-color: #fff;
