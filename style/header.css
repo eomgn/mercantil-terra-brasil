@@ -1,5 +1,5 @@
 header {
-  background-color: #fff159;
+  background-color: #FFD700;
 
   & .header-container {
     display: flex;
@@ -53,7 +53,7 @@ header {
   }
   & .header-bottom {
     width: 100%;
-    border-top: 2px solid #e0d348;
+    border-top: 3px solid #ecc800;
     display: flex;
     justify-content: center;
     gap: 10px;
